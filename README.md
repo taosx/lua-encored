@@ -6,6 +6,7 @@ Half-Hearted Apache Avro, it just goes half-way there. Maybe it evolves in the f
 A schema is formated by one or more fields with 2 required attributes: name, type and other optional ones.
 Ex. schema:
 
+```lua
 local person_schema = {
     { name = "given_name", type = "string" },
     { name = "family_name", type = "string" },
@@ -13,6 +14,7 @@ local person_schema = {
     { name = "gender", type = "string" },
     { name = "birthday", type = "number" }
 }
+```
 
 Schemas are composables, ex.:
 
@@ -43,10 +45,14 @@ data: `{ primes = {2, 73, 179} }`
 data: `{ name = "Tasos", "Mike", "John" }`
 
 
-3. ```{ name = "friends", type = "array", items = {
+3.
+```
+{ name = "friends", type = "array", items = {
     { name = "given_name", type = "string" },
     { name = "family_name", type = "string" }
-} }```
+} }
+```
+```
 data: {
     friends = {
         { given_name = "Tasos", family_name = "Soukoulis" },
@@ -54,6 +60,7 @@ data: {
         { given_name = "John", family_name = "Tyson" }
     }
 }
+```
 
 Additional Field Attributes:
 `default`: 
