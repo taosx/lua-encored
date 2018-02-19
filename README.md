@@ -69,9 +69,9 @@ data:
 
 
 ## API
-`encode(schema, table)`
-`decode(schema, array)`
-`normalize(schema, array)` add's msgpack.NULL where table element is missing.
-`validate_schema(schema)` it validates the schema using the specification.
-`validate(schema, tableORarray)` it validates the tableORarray based on a schema.
+- `encode(schema, table)`
+- `decode(schema, array)`
+- `normalize(schema, array)` add's msgpack.NULL where table element is missing.
+- `validate_schema(schema)` it validates the schema using the specification.
+- `validate(schema, tableORarray)` it validates the tableORarray based on a schema.
 
