@@ -38,34 +38,37 @@ ex. value: true or false
 - `array`
 Field of type `array` has an additional attribute `items` which can take a type or another schema.
 ex. fields:
-1. `{ name = "primes", type = "array", items = "number" }`
-data: `{ primes = {2, 73, 179} }`
 
+  * Array with items of type number:
 
-2. `{ name = "names", type = "array", items = "string" }`
-data: `{ name = "Tasos", "Mike", "John" }`
+  `{ name = "primes", type = "array", items = "number" }` data: `{ primes = {2, 73, 179} }`
 
+  * Array with items of type string:
 
-3. 
-```
-{ name = "friends", type = "array", items = {
-    { name = "given_name", type = "string" },
-    { name = "family_name", type = "string" }
-} }
-```
-data:
-```
-{
-    friends = {
-        { given_name = "Tasos", family_name = "Soukoulis" },
-        { given_name = "Mike", family_name = "Doe" },
-        { given_name = "John", family_name = "Tyson" }
+   `{ name = "names", type = "array", items = "string" }` data: `{ name = "Tasos", "Mike", "John" }`
+
+  * Array with items of type schema:
+   ```
+    { name = "friends", type = "array", items = {
+       { name = "given_name", type = "string" },
+       { name = "family_name", type = "string" }
+    } }
+    ```
+    data:
+    ```
+    {
+        friends = {
+            { given_name = "Tasos", family_name = "Soukoulis" },
+            { given_name = "Mike", family_name = "Doe" },
+            { given_name = "John", family_name = "Tyson" }
+        }
     }
-}
-```
+    ```
 
 ### Additional Field Attributes:
-`default`: 
+* `default`: set's up a default value for when the field value is nil
+* `optional`: the field value can be nil
+
 
 
 ## API
