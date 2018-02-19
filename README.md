@@ -1,4 +1,5 @@
-lua-encored it converts an lua table to an array (an integer indexed table) and reconstructs based on a schema.
+# lua-encored
+Converts an lua table to an array (an integer indexed table) and reconstructs based on a schema.
 
 Half-Hearted Apache Avro, it just goes half-way there. Maybe it evolves in the future.
 
@@ -63,7 +64,7 @@ data:
 }
 ```
 
-Additional Field Attributes:
+### Additional Field Attributes:
 `default`: 
 
 
