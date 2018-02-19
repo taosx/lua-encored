@@ -45,7 +45,8 @@ data: `{ primes = {2, 73, 179} }`
 data: `{ name = "Tasos", "Mike", "John" }`
 
 
-3.```
+3. 
+```
 { name = "friends", type = "array", items = {
     { name = "given_name", type = "string" },
     { name = "family_name", type = "string" }
