@@ -117,9 +117,9 @@ local decoded = encored.decode(member_schema, encoded_data)
 ```
 
 ## TODO:
-- Write `normalize`
-- Write `validate_data`
-
+* Write `normalize` ✕
+* Write `validate_data` ✕
+* Write `tests` ✕
 
 ## API
 - `encode(schema, table)`
